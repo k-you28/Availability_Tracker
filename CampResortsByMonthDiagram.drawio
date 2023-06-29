@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="DcAWaF698nEAmzb4o7Vi" name="Page-1">
-        <mxGraphModel dx="486" dy="434" grid="1" gridSize="10" guides="1" tooltips="1" connect="0" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="2352" dy="1214" grid="1" gridSize="10" guides="1" tooltips="1" connect="0" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -97,13 +97,7 @@
                 <mxCell id="44" value="Get the next day in the contents" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="810" y="210" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="45" value="" style="endArrow=classic;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="44" edge="1">
-                    <mxGeometry width="50" height="50" relative="1" as="geometry">
-                        <mxPoint x="770" y="240" as="sourcePoint"/>
-                        <mxPoint x="820" y="190" as="targetPoint"/>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="46" value="Is index less than length/2 and there is a remaining day?" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                <mxCell id="46" value="Does the day exist?" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="800" y="320" width="140" height="140" as="geometry"/>
                 </mxCell>
                 <mxCell id="47" value="" style="endArrow=classic;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="46" edge="1">
@@ -124,7 +118,7 @@
                 <mxCell id="50" value="Get the remaining number of slots for this day" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="890" y="470" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="51" value="Is it parsable to an Integer?" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                <mxCell id="51" value="Is the number greater than zero?" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="980" y="325" width="130" height="130" as="geometry"/>
                 </mxCell>
                 <mxCell id="52" value="" style="endArrow=classic;html=1;" parent="1" edge="1">
@@ -133,7 +127,7 @@
                         <mxPoint x="1010" y="420" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="53" value="" style="endArrow=classic;html=1;entryX=0.992;entryY=0.975;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" edge="1" target="44">
+                <mxCell id="53" value="" style="endArrow=classic;html=1;entryX=0.992;entryY=0.975;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="44" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="980" y="389.58" as="sourcePoint"/>
                         <mxPoint x="940" y="389.58" as="targetPoint"/>
@@ -147,12 +141,6 @@
                 </mxCell>
                 <mxCell id="55" value="Append it to all relevant Strings" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="985" y="540" width="120" height="60" as="geometry"/>
-                </mxCell>
-                <mxCell id="56" value="" style="endArrow=classic;html=1;entryX=0.49;entryY=-0.024;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="55" edge="1">
-                    <mxGeometry width="50" height="50" relative="1" as="geometry">
-                        <mxPoint x="1044.58" y="455" as="sourcePoint"/>
-                        <mxPoint x="1044.58" y="505" as="targetPoint"/>
-                    </mxGeometry>
                 </mxCell>
                 <mxCell id="57" value="" style="endArrow=classic;html=1;entryX=1.039;entryY=0.476;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="44" edge="1">
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -297,6 +285,30 @@
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
                         <mxPoint x="490" y="840" as="sourcePoint"/>
                         <mxPoint x="490" y="890" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="93" value="" style="endArrow=classic;html=1;entryX=0.507;entryY=-0.027;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.497;exitY=0.993;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="51" target="55">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="1040" y="469.7" as="sourcePoint"/>
+                        <mxPoint x="1140" y="469.7" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="94" value="Yes" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" connectable="0" vertex="1" parent="93">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="95" value="Make String readable in JSON format" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="730" y="85" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="96" value="" style="endArrow=classic;html=1;entryX=0.208;entryY=0.992;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="95">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="700" y="210" as="sourcePoint"/>
+                        <mxPoint x="750" y="160" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="97" value="" style="endArrow=classic;html=1;entryX=0.3;entryY=-0.042;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.692;exitY=1.042;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="95" target="44">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="810" y="200" as="sourcePoint"/>
+                        <mxPoint x="860" y="150" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
             </root>
