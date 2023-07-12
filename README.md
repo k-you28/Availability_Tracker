@@ -1,5 +1,7 @@
 # AvailableCampSlots_KatmaiNationalPark
 
+  Have you ever wanted to attend an event or book a reservation, but no slots are available? This repo is just for you! By checking every five minutes, CampResortsByMonth.java is able to notify you if there is availability for the Katmai national park. It sends you an email if there is a new slot that is available for you. You can run this at anytime as long as your device is on!
+
   This repository holds two files: CampResortsByMonth.java and lastReceivedDates.txt. CampResortsByMonth repeatedly makes a POST request depending on the Thread.sleep argument. 
 
   To run this locally on your device, you will need to change a few lines of CODE in order to allow it to work for your benefit. The following are variables / lines that are important to keep in mind:
