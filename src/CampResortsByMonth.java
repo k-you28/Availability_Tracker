@@ -157,7 +157,9 @@ public class CampResortsByMonth {
 
 
 			if(res.length()==0) return; //If not relevant info, don't continue to avoid duplicate information
-			String payloadInfo = "name=Kevin+You&email=kevin.you2940%40gmail.com&message=" + res + "&sub=Send+Message";
+
+			//IMPORTANT TO FILL OUT
+			String payloadInfo = "name=(FIRST_NAME)+(LAST_NAME)&email=(YOUR_EMAIL)&message=" + res + "&sub=Send+Message";
 
 
 
@@ -198,7 +200,7 @@ public class CampResortsByMonth {
 
 
 			//Opens a connection to a third-party email sender
-			URL formspree = new URL("https://formspree.io/f/mgebgkrl"); //CHANGE THIS LINK
+			URL formspree = new URL("https://formspree.io/......"); //INSERT NEW LINK
 			HttpURLConnection form = (HttpURLConnection) formspree.openConnection();
 
 			form.setRequestMethod("POST");
