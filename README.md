@@ -19,6 +19,8 @@ Note: Line 166 - lastReceivedDates.txt must be in your source folder. This can b
 
 Line 201: MUST BE CHANGED. You can easily get your own third-party key from FormSpree in order to receive emails for your own personal account. If this link is not changed, the information is sent to me instead and you won't receive any notifications. 
 
+![png](./docs/CampResortsByMonthDiagram.drawio.png)
+
 
 
 This is every important piece of information that can be changed for your liking. Something to note is that your device must remain on in order to keep running this file. If there are remaining slots, you will receive a notification through your email.
